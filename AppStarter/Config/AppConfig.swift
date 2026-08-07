@@ -28,7 +28,7 @@ enum AppConfig {
 
     // MARK: - App
 
-    /// Numeric Apple App ID: the digits in your App Store URL (`…/id6760719879`).
+    /// Numeric Apple App ID: the digits in your App Store URL (`…/id1234567890`).
     /// Needed by AppsFlyer for SKAdNetwork, and by the "write a review" deep link.
     static let appleAppID = infoValue("APPLE_APP_ID")
 

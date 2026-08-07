@@ -51,7 +51,7 @@ Map only `af_skan_trial` / `af_skan_purchase` here. **Never** map them in a part
 **RevenueCat → Project → Integrations → Attribution → AppsFlyer**
 
 - [ ] Paste your AppsFlyer **dev key** into both the production and sandbox key fields.
-- [ ] Set the iOS App ID (`id6760719879`) in both the production and sandbox fields.
+- [ ] Set the iOS App ID (`id1234567890`) in both the production and sandbox fields.
 - [ ] **Rename the events.** RevenueCat's defaults are `rc_initial_purchase`, `rc_trial_started`, and so on. AppsFlyer's partner mappings match on `af_purchase` and `af_start_trial`. Left at the defaults, RevenueCat sends events that nothing downstream is listening for.
 
 | RevenueCat event | Rename to |

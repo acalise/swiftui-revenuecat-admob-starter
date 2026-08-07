@@ -35,7 +35,7 @@ A Mobile Measurement Partner is the piece that reconstructs the link. AppsFlyer 
 3. ```
    // Configuration/Secrets.xcconfig
    APPSFLYER_DEV_KEY = your_dev_key
-   APPLE_APP_ID = 6760719879   // digits from your App Store URL
+   APPLE_APP_ID = 1234567890   // digits from your App Store URL
    ```
 4. Rebuild (⌘R).
 
