@@ -1,0 +1,26 @@
+# ── Secrets ──────────────────────────────────────────────────────────────────
+# The whole point of the xcconfig split. Never commit this file.
+Configuration/Secrets.xcconfig
+
+# ── Xcode ────────────────────────────────────────────────────────────────────
+build/
+DerivedData/
+*.xcuserstate
+*.xcuserdatad/
+xcuserdata/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.swiftpm/
+.build/
+Packages/
+# NOTE: Package.resolved is deliberately NOT ignored. Committing it pins every
+# dependency to an exact revision, so a fresh clone and CI build the same code
+# you tested. Ignoring it is how a starter silently drifts across machines.
+
+# ── macOS ────────────────────────────────────────────────────────────────────
+.DS_Store

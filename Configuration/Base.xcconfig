@@ -1,0 +1,46 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// Base.xcconfig: build settings, plus defaults for every key the app reads.
+//
+// The order below matters. Defaults come first; `#include?` of Secrets.xcconfig
+// comes last, so anything you set there wins. The `?` makes the include
+// OPTIONAL, which is what lets a fresh clone build with no Secrets.xcconfig at
+// all: every service just no-ops.
+// ─────────────────────────────────────────────────────────────────────────────
+
+// ── Identity ─────────────────────────────────────────────────────────────────
+// Change these two for your own app.
+PRODUCT_BUNDLE_IDENTIFIER = com.yourname.appstarter
+PRODUCT_NAME = AppStarter
+
+MARKETING_VERSION = 1.0.0
+CURRENT_PROJECT_VERSION = 1
+
+// ── Defaults (overridden by Secrets.xcconfig) ────────────────────────────────
+APPLE_APP_ID =
+REVENUECAT_API_KEY =
+RC_ENTITLEMENT = pro
+RC_OFFERING =
+APPSFLYER_DEV_KEY =
+POSTHOG_API_KEY =
+
+// xcconfig treats `//` as a comment ANYWHERE on a line, including mid-value,
+// a bare https://host silently truncates to "https:". Splitting the slashes
+// into their own variable is the standard workaround.
+SLASHES = //
+POSTHOG_HOST = https:$(SLASHES)us.i.posthog.com
+TERMS_URL = https:$(SLASHES)example.com/terms
+PRIVACY_URL = https:$(SLASHES)example.com/privacy
+
+ADS_ENABLED = NO
+// Google's public SAMPLE app ID. Required in Info.plist whenever the Mobile Ads
+// SDK is linked: a missing value is a hard crash at launch, not a silent
+// no-ad. Replace before shipping.
+ADMOB_APP_ID = ca-app-pub-3940256099942544~1458002511
+ADMOB_BANNER_UNIT_ID =
+ADMOB_INTERSTITIAL_UNIT_ID =
+ADMOB_REWARDED_UNIT_ID =
+
+ATT_ENABLED = NO
+
+// ── Your values ──────────────────────────────────────────────────────────────
+#include? "Secrets.xcconfig"
