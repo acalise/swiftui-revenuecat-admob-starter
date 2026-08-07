@@ -9,7 +9,7 @@ Clone it, open it, change the accent color, ship.
 [![iOS](https://img.shields.io/badge/iOS-17%2B-black?logo=apple)](https://developer.apple.com/ios/)
 [![SwiftUI](https://img.shields.io/badge/SwiftUI-Observable-blue)](https://developer.apple.com/documentation/swiftui)
 
-The native sibling of [expo-heroui-native-admob-starter](https://github.com/acalise/expo-heroui-native-admob-starter). Same architecture, same hard-won gotchas, no React Native.
+SwiftUI on iOS 17+, `@Observable` throughout, Swift Package Manager only. No CocoaPods, no workspace, no bridging layer.
 
 ---
 
