@@ -218,6 +218,12 @@ It has to live inside `AppStarter/`. Synchronized groups only cover that folder.
 
 ---
 
+## Before you submit
+
+The paywall here is built to pass review, but everything you add on top of it isn't. Before each submission, run [ios-app-rejection-checker](https://github.com/acalise/ios-app-rejection-checker), a Claude Code skill that checks your code, App Store listing and review notes for the mistakes reviewers reject most, and drafts your App Review notes. This starter scans with 0 FAIL out of the box.
+
+---
+
 ## Contributing
 
 Issues and PRs welcome. Please keep PRs focused, and update the relevant doc when you change behaviour: the explanations are the point of this repo, not a side effect.
